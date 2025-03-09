@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: customers
+    description: "Cleansed customer data from the raw layer."
+    columns:
+      - name: customer_id
+        description: "Unique customer ID."
+        tests:
+          - unique
+          - not_null
+      - name: email
+        description: "Customer email address."
+        tests:
+          - not_null

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: customer_signup_report
+    description: "Daily count of new customer signups."
+    columns:
+      - name: signup_date
+        description: "Date of customer signups."
+        tests:
+          - not_null
+      - name: total_signups
+        description: "Number of customers who signed up on that day."
+        tests:
+          - not_null
